@@ -1,0 +1,18 @@
+# fastapi
+# uvicorn
+# requests
+# python-dotenv
+# gitpython
+# sentence-transformers
+# faiss-cpu
+# openai
+
+
+fastapi
+uvicorn
+requests
+gitpython
+sentence-transformers
+faiss-cpu
+python-dotenv
+ollama

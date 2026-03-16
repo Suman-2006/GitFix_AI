@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#000000);
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+}
+
+/* background animation */
+
+@keyframes gradient {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+
+/* main container */
+
+.app {
+  text-align: center;
+  color: white;
+  padding-top: 80px;
+}
+
+/* title */
+
+.title{
+  font-size: 42px;
+}
+
+.subtitle{
+  opacity:0.7;
+  margin-bottom:40px;
+}
+
+/* input section */
+
+.input-panel{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+input{
+  padding:15px;
+  border-radius:10px;
+  border:none;
+  width:200px;
+  outline:none;
+}
+
+/* button */
+
+button{
+  padding:15px 30px;
+  border:none;
+  border-radius:10px;
+  background:#007bff;
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#0056d2;
+  transform:scale(1.05);
+}
+
+/* pipeline */
+
+.pipeline{
+  margin-top:60px;
+}
+
+.steps{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.step{
+  padding:15px 25px;
+  background:rgba(255,255,255,0.1);
+  border-radius:10px;
+  animation: fade 1s ease forwards;
+}
+
+/* results cards */
+
+.results{
+  margin-top:60px;
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+/* card UI */
+
+.card{
+  background:rgba(255,255,255,0.08);
+  padding:20px;
+  border-radius:12px;
+
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+  animation:fadeIn 0.8s ease forwards;
+  width:260px;
+}
+
+/* fade animation */
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* links */
+
+a{
+  color:#00d4ff;
+}
