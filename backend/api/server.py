@@ -14,14 +14,6 @@ from backend.fixer import apply_ai_fix
 from backend.github_service.code_committer import commit_fix
 from backend.github_service.pr_creator import create_pull_request
 
-# from github_service.issue_fetcher import fetch_issue
-# from github_service.repo_fetcher import clone_repo
-# from github_service.repo_scanner import scan_repo
-# from repo_search import find_relevant_file
-# from llm import analyze_issue_with_ai
-# from fixer import apply_ai_fix
-# from github_service.code_committer import commit_fix
-# from github_service.pr_creator import create_pull_request
 app = FastAPI()
 
 # CORS
