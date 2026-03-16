@@ -1,10 +1,12 @@
 
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 # your imports
-
-
 from backend.github_service.issue_fetcher import fetch_issue
 from backend.github_service.repo_fetcher import clone_repo
 from backend.github_service.repo_scanner import scan_repo
