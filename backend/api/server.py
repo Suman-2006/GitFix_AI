@@ -20,7 +20,6 @@ from llm import analyze_issue_with_ai
 from fixer import apply_ai_fix
 from github_service.code_committer import commit_fix
 from github_service.pr_creator import create_pull_request
-
 app = FastAPI()
 
 # CORS
